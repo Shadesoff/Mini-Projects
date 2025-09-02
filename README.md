@@ -9,7 +9,7 @@ Each project lives in its own folder and can be viewed directly via GitHub Pages
 
 ## 🚀 Projects
 
-### [Retro Rumble](https://yourusername.github.io/mini-projects/retro-rumble/)
+### [Retro Rumble](https://shadesoff.github.io/Mini-Projects/retro-rumble/)
 An 8-bit styled Rock, Paper, Scissors game with a vintage console UI.
 
 Features:
@@ -30,5 +30,5 @@ This repository is meant to:
 
 ## 🔗 Live Demos
 All projects are hosted on **GitHub Pages**:  
-👉 [https://yourusername.github.io/mini-projects/](https://yourusername.github.io/mini-projects/)
+👉 [https://shadesoff.github.io/Mini-Projects/](https://shadesoff.github.io/Mini-Projects/)
 
