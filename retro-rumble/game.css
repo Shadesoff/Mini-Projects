@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: linear-gradient(
+    to bottom,
+    #a0a0a0  10%,
+    #888888 20%,
+    #1a1a1a 70%,
+    #000000 90%
+  ) no-repeat;
+  background-attachment: scroll;
+  background-size: 100% 100%;
+}
+body {
+  min-height: auto;          
+  background: transparent;   
+}
+/*Navigation Bar*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  padding: 2rem 1rem;
+  position: relative;
+}
+
+ h1 {
+  font-family: "Press Start 2P", cursive;
+  font-weight: 400;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.nav-logo {
+  width: 2rem;
+  margin-right: .5rem;
+  height: auto;
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+main {
+  flex: 1 0 auto;
+}
+/*console*/
+.game-container {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 4rem;
+  width: 600px;
+  height: 600px;
+  background-color: black;
+  border-radius: 12%;
+    box-shadow: 0 0 30px black;
+}
+.black-base {
+  position: relative;
+  padding: 0% 0% 0% 0%;
+  width: 600px;
+  height: 600px;
+  background-color: black;
+  border-radius: 12%;
+}
+.white-base {
+  position: relative;
+  padding: 0% 0% 0% 0%;
+  width: 560px;
+  height: 570px;
+  background-color: white;
+  border-radius: 12%;
+}
+.design-wrapper {
+  position: relative;
+  width: 550px;
+  height: 560px;
+  border-radius: 12%;
+}
+.design-overlay {
+  position: relative;
+  width: 550px;
+  height: 560px;
+  background-color: white;
+  border-radius: 12%;
+}
+.controls {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.retro-btn {
+  width: 90px;
+  height: 90px;
+  background: #ff8800; 
+  border: 10px solid #b40000; 
+  border-radius: 50%; 
+  box-shadow: 10px 10px 0 #490000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+.rock-icon {
+  width: 80% ;
+  height: auto;
+}
+.scissors-icon {
+  width: 100%;
+  height: auto;
+}
+.paper-icon {
+  width: 80%;
+  height: auto;
+}
+.reset-icon {
+  width: 80%;
+  height: auto;
+}
+
+/* icon positions */
+#rock-btn {
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+}
+#paper-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 150px;
+}
+#scissors-btn {
+  position: absolute;
+  bottom: 10px;
+  left: -120px;
+}
+#reset-btn {
+  width: 120px !important;
+  height: 120px !important; 
+  position: absolute;
+  bottom: 40px;
+  left: 70px;
+}
+
+/* Press effect */
+.retro-btn:active {
+  transform: translate(3px, 3px);
+  box-shadow: 2px 2px 0 #ff3636;
+}
+/* overlay container */
+.screen {
+  position: absolute;   
+  top: 50px;            
+  left: 50px;           
+  width: 470px;
+  height: 260px;
+  z-index: 10;          
+  display: grid;        
+  place-items: stretch;
+  pointer-events: auto; 
+}
+
+.screen-base {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  border-radius: 50px;
+  border-bottom: 10px solid rgb(255, 255, 255);
+  border-right: 15px solid rgb(255, 255, 255);
+}
+/*-----------------------------------------------*/
+/* Message text */
+#msg {
+  font-family: "VT323", monospace;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  margin: 7rem auto;
+  pointer-events: none;
+}
+
+#Score-board {
+  margin-top: 2rem;
+  margin-left: .5rem;
+  width: 100%;
+  text-align: center;
+}
+
+#Score-board caption {
+  font-family: "Press Start 2P", cursive;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: yellow;
+  text-transform: uppercase;
+}
+
+#Score-board table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+#Score-board th,
+#Score-board td {
+  font-family: "VT323", monospace;
+  font-size: 1.5rem;
+  padding: 0.5rem 1.5rem;
+  color: white;
+  border: 2px solid red;
+}
+
+#userScore {
+  color: lime;
+  font-weight: bold;
+}
+
+#computerScore {
+  color: crimson; 
+  font-weight: bold;
+}
+#result {
+  font-family: "VT323", monospace;
+  font-size: 1.8rem;
+  margin-top: 3rem;
+  text-align: center;
+  color: white; 
+}
+/* Footer */
+#description {
+  text-align: center;
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  margin: 5rem;
+  color: white;
+}
+
+footer {
+  font-size: 1.5rem;
+  margin-top: 0; 
+  padding: 1rem 0.5rem;
+  color: white;
+  text-align: center;
+  font-family: 'VT323', monospace;
+}

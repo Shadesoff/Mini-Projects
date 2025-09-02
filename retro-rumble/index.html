@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Rumble</title>
+    <script defer src="game.js"></script>
+    <link rel="stylesheet" href="game.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+<!----Navigation Bar---->
+    <header>
+        <h1>Retro Rumble</h1>
+        <a rel="icon" type="image/x-icon" href="https://github.com/Shadesoff">
+            <img src="/Retro-Rumble/Assets/github-mark-white.png" alt="GitHub Logo" class="nav-logo">
+        </a>
+    </header>
+<!---Retro Rumble--->
+<main>
+<div class="game-container">
+  <div class="black-base">
+    <div class="white-base">
+      <div class="design-wrapper">
+        <img class="design-overlay" src="/Retro-Rumble/Assets/game-console-design.jpg" alt="Game UI">
+        <!-- New overlay -->
+        <div class="screen">
+          <div class="screen-base">
+            <p id="msg">Press a button to start...</p>
+            <div id="Score-board" style="display:none;">
+                <table>
+                    <caption>Score-board</caption>
+                    <tr>
+                        <th>You</th>
+                        <th>Computer</th>
+                    </tr>
+                    <tr>
+                        <td id="userScore">0</td>
+                        <td id="computerScore">0</td>
+                    </tr>
+                </table>
+                <p id="result">Computer chose rock: You Win!</p>
+            </div>
+          </div>
+        </div>
+        <!-- Controls outside screen -->
+          <div class="controls">
+                <button id="rock-btn" class="retro-btn" data-choice="rock">
+                  <img src="/Retro-Rumble/Assets/rock-icon.png" alt="Rock" class="rock-icon">
+                </button>
+                <button id="paper-btn" class="retro-btn" data-choice="paper">
+                   <img src="/Retro-Rumble/Assets/paper-icon.png" alt="Paper" class="paper-icon">
+                </button>
+                <button id="scissors-btn" class="retro-btn" data-choice="scissors">
+                  <img src="/Retro-Rumble/Assets/scissors-icon.png" alt="Scissors" class="scissors-icon">
+                </button>
+                <button id="reset-btn" class="retro-btn">
+                  <img src="/Retro-Rumble/Assets/reset-icon.png" alt="Reset" class="reset-icon">
+                </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main> 
+    <p id="description">» An 8-bit twist on the timeless battle of Rock, Paper & Scissors «</p>
+    <!--copyright/credits-->
+<footer>
+    <small>© 2025 Shades</small>
+</footer>                                                      
+</body>
+</html>
