@@ -1,0 +1,129 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Instrument Sans', sans-serif;
+  font-weight: 200;
+}
+
+body {
+  background-color: #d2d2d2;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+/* Calculator Frame */
+.calculator {
+  height: 36rem;
+  width: 26rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #caa4a4;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Top Bar */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#theme-toggle,
+#camera-btn {
+  width: 3rem;
+  height: 3rem;
+}
+
+#mode-btn {
+  font-size: 1.1rem;
+  font-weight: 600;
+  width: 9rem;
+  height: 3rem;
+}
+
+/* Base Button */
+.btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 0 #2b2b2b;
+  transition: all 0.1s ease;
+}
+
+.btn:active {
+  transform: translate(3px, 3px);
+  box-shadow: 2px 2px 0 #a9a9a9;
+}
+
+/* Color Variants */
+.gray-btn {
+  background-color: #ececec;
+}
+.gray-btn:hover {
+  background-color: #ddd;
+}
+
+.accent-btn {
+  background-color: #CF0A0A; /* red accent */
+  color: white;
+}
+.accent-btn:hover {
+  background-color: #e24848;
+}
+
+.dark-btn {
+  background-color: #000;
+  color: white;
+}
+.dark-btn:hover {
+  background-color: #343434;
+}
+
+/* Icon Buttons */
+#theme-toggle img,
+#camera-btn img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* Display */
+.display {
+  height: 7rem;
+  width: 100%;
+  background-color: #fff;
+  border: 0.1rem solid #eee;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  text-align: right;
+  font-size: 2rem;
+  overflow: hidden;
+}
+#expression {
+  color: #888;
+  font-size: 1.5rem;
+}
+#result {
+  color: #333;
+  font-size: 2rem;
+}
+
+/* Buttons Grid */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+.buttons button {
+  height: 4rem;
+  font-size: 1.5rem;
+  border-radius: 2rem;
+}
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@200;400;600&display=swap" rel="stylesheet">
+  <!-- Default theme -->
+  <link id="theme" rel="stylesheet" href="styles/light.css">
+</head>
+
+<body>
+  <div class="calculator">
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <button id="theme-toggle" class="btn btn-small gray-btn" aria-label="Toggle Theme">
+        <img id="theme-icon" src="./assets/dark-mode.png" alt="Toggle Theme" />
+      </button>
+      <button id="mode-btn" class="btn btn-wide accent-btn">Standard</button>
+      <button id="camera-btn" class="btn btn-small gray-btn" aria-label="Camera Input">
+        <img src="./assets/camera.png" alt="Camera" />
+      </button>
+    </div>
+
+    <!-- Display -->
+    <div class="display">
+      <div id="expression"></div>
+      <div id="result">0</div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="buttons">
+      <button class="btn special-btn accent-btn">AC</button>
+      <button class="btn special-btn gray-btn">( )</button>
+      <button class="btn special-btn gray-btn">%</button>
+      <button class="btn operator-btn dark-btn">/</button>
+
+      <button class="btn number-btn gray-btn">7</button>
+      <button class="btn number-btn gray-btn">8</button>
+      <button class="btn number-btn gray-btn">9</button>
+      <button class="btn operator-btn dark-btn">*</button>
+
+      <button class="btn number-btn gray-btn">4</button>
+      <button class="btn number-btn gray-btn">5</button>
+      <button class="btn number-btn gray-btn">6</button>
+      <button class="btn operator-btn dark-btn">-</button>
+
+      <button class="btn number-btn gray-btn">1</button>
+      <button class="btn number-btn gray-btn">2</button>
+      <button class="btn number-btn gray-btn">3</button>
+      <button class="btn operator-btn dark-btn">+</button>
+
+      <button class="btn number-btn gray-btn">.</button>
+      <button class="btn number-btn gray-btn">0</button>
+      <button class="btn special-btn accent-btn">C</button>
+      <button id="equals" class="btn operator-btn dark-btn">=</button>
+    </div>
+  </div>
+  <script src="calculator.js"></script>
+</body>
+</html>
